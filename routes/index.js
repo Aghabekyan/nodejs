@@ -9,14 +9,11 @@ router.get('/', function(req, res, next) {
 
 /* GET Users page. */
 router.get('/users', function(req, res, next) {
-  var xxx
-  xxx = User
+  var pr = User
       .findAll({
           attributes: ['id', 'firstName', 'lastName']
         })
-  xxx.then((users) => res.render('users', { title: 'Users', 'users': users }))
-
-  // res.render('users', { title: 'Users', 'xxx': xxx })
+  pr.then((users) => res.render('users', { title: 'Users', 'users': users }))
 });
 
 module.exports = router;
