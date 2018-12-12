@@ -10,5 +10,7 @@ router.get('/', function(req, res, next) {
 
 /* User Router */
 router.get('/api/users', userController.list);
+router.get('/api/users/:id', userController.getById);
+router.post('/api/users', userController.add);
 
 module.exports = router;
