@@ -21,7 +21,7 @@ jobs:
 
 
 
-      - run: aptu-get update
+      - run: ap-get update
         
       # run tests!
       - run: echo 5
