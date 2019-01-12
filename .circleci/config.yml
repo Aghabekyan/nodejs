@@ -21,7 +21,7 @@ jobs:
 
 
 
-      - run: apt-get install postgres
+      - run: apt-get install python
         
       # run tests!
       - run: echo 5
